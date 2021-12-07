@@ -1,0 +1,46 @@
+
+/* using root psuedo-class to apply CSS custom property values to entire document */
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+
+#grid-container {
+    border: 15px groove black;
+    resize: both;
+    display: grid;
+    width: 960px;
+    height: 960px;
+    overflow: auto;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+
+.grid-item {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 150px;
+    margin: 0 auto;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+}
+
+h1 {
+    text-align: center;
+}
