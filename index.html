@@ -6,14 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <script src="./scripts.js" defer></script>
-    <title>GRID BABY WOO</title>
+    <title>An etch to sketch</title>
 </head>
 <body>
-    <h1>Etch-A-Sketch!</h1>
+    
     <div id="main">
+        <div class="header">
+            <h1>Sketch-An-Etch...?</h1>
+            <input type="range" id="grid-size-selector" mine="0" max="100" name="grid-sizer">
+            <label for="grid-sizer">Select Grid Size</label>
+        </div>
+
         <div class="buttons-container">
-            <button>Select Color</button>
-            <button>Reset Canvas</button>
+            <button id="color-button">Select Color</button>
+            <button id="erase-button">Eraser</button>
+            <button id="reset-button">Reset Canvas</button>
+            
         </div>
         <div id="grid-container">
 

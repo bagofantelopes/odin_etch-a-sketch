@@ -19,7 +19,7 @@ const makeGrid = (rows, columns) => {
         cell.addEventListener('mouseenter', () => {
             cell.style.backgroundColor = 'red';
         });
-
+        
         /*
         cell.addEventListener('mouseout', () => {
             setTimeout( () => {
@@ -27,9 +27,35 @@ const makeGrid = (rows, columns) => {
             }, 500);
         });
         */
-
     };
 };
 
+const resetGrid = () => {
+    for (i = 0; i < (rows * columns); i++) {
+
+    }
+}
 
 makeGrid(rows, columns);
+
+// Grid size selector
+const sizer = document.querySelector('input');
+
+// Button event listeners
+const colorButton = document.getElementById('color-button');
+colorButton.addEventListener('click', () => {
+
+});
+
+const eraseButton = document.getElementById('erase-button');
+eraseButton.addEventListener('click', () => {
+
+});
+
+const resetButton = document.getElementById('reset-button');
+resetButton.addEventListener('click', () => {
+    let cells = document.querySelectorAll('div.grid-item');
+    cells.forEach(div => {
+        div.style.backgroundColor = 'white';
+    });
+});

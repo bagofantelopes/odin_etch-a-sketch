@@ -12,6 +12,7 @@
     width: 960px;
     height: 960px;
     overflow: auto;
+    /* CSS Variables and custom property values!*/
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
 }
@@ -23,17 +24,18 @@
 
 #main {
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 150px;
     margin: 0 auto;
 }
 
 .buttons-container {
     display: flex;
-    flex-direction: column;
     justify-items: center;
     align-items: center;
+    margin: 1em;
+    gap: 1em;
 }
 
 button {
