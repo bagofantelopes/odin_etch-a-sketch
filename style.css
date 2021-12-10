@@ -40,9 +40,23 @@
 
 button {
     width: 100px;
-    height: 50px;
+    height: 60px;
+    border: 5px groove black;
+}
+
+#color-picker {
+    width: 100%;
+    height: 100%;
 }
 
 h1 {
+    text-align: center;
+}
+
+ {
+    border: 5px solid black;
+}
+
+.header p {
     text-align: center;
 }

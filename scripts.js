@@ -1,5 +1,6 @@
 let rows = 64;
 let columns = 64;
+let color = "#0000ff";
 
 const grid = document.getElementById('grid-container');
 
@@ -17,7 +18,7 @@ const makeGrid = (rows, columns) => {
         
         // change color of a cell on mouseover for "drawing" effect!
         cell.addEventListener('mouseenter', () => {
-            cell.style.backgroundColor = 'red';
+            cell.style.backgroundColor = color;
         });
         
         /*
@@ -30,26 +31,23 @@ const makeGrid = (rows, columns) => {
     };
 };
 
-const resetGrid = () => {
-    for (i = 0; i < (rows * columns); i++) {
-
-    }
-}
-
 makeGrid(rows, columns);
 
 // Grid size selector
 const sizer = document.querySelector('input');
 
 // Button event listeners
-const colorButton = document.getElementById('color-button');
-colorButton.addEventListener('click', () => {
 
+// code for color change button/input
+const colorButton = document.querySelector('#color-picker');
+colorButton.value = color;
+colorButton.addEventListener('input', (e) => {
+    color = e.target.value;
 });
 
 const eraseButton = document.getElementById('erase-button');
 eraseButton.addEventListener('click', () => {
-
+    color = "ffffff";
 });
 
 const resetButton = document.getElementById('reset-button');

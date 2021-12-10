@@ -15,13 +15,15 @@
             <h1>Sketch-An-Etch...?</h1>
             <input type="range" id="grid-size-selector" mine="0" max="100" name="grid-sizer">
             <label for="grid-sizer">Select Grid Size</label>
+            <p>64x64</p>
         </div>
 
         <div class="buttons-container">
-            <button id="color-button">Select Color</button>
+            <button id="color-button">
+                <input id="color-picker" type="color" text="Select Color">
+            </button>
             <button id="erase-button">Eraser</button>
-            <button id="reset-button">Reset Canvas</button>
-            
+            <button id="reset-button">Reset Canvas</button>    
         </div>
         <div id="grid-container">
 
