@@ -9,25 +9,50 @@
     <title>An etch to sketch</title>
 </head>
 <body>
+
+    <div class="header">
+        <h1>Etch-A-Sketch!</h1>
+    </div>
     
     <div id="main">
-        <div class="header">
-            <h1>Sketch-An-Etch...?</h1>
-            <input type="range" id="grid-size-selector" mine="0" max="100" name="grid-sizer">
+        <div class="container controls">
+            <h2>Controls</h2>
+            <input type="range" id="grid-size-selector" min="0" max="100" name="grid-sizer" step="1">
             <label for="grid-sizer">Select Grid Size</label>
-            <p>64x64</p>
-        </div>
+            <div class="sub-container">
+                <p id="size-display">64x64</p>
+                <input id="size-submit" type="submit" value="Submit">
+            </div>
 
-        <div class="buttons-container">
-            <button id="color-button">
-                <input id="color-picker" type="color" text="Select Color">
-            </button>
-            <button id="erase-button">Eraser</button>
-            <button id="reset-button">Reset Canvas</button>    
+            <div class="sub-container">
+                <div class="buttons-container">
+                    <div class="sub-container">
+                        <button id="color-button">
+                            <input id="color-picker" type="color" text="Select Color">
+                        </button> 
+                        <p>Draw Color</p>
+                    </div>
+                    <div class="sub-container">
+                        <button id="color-button">
+                            <input id="background-picker" type="color" text="Select Color">
+                        </button> 
+                        <p>Canvas Color</p>
+                    </div>
+                    <button id="erase-button">Eraser: Off</button>
+                    <button id="random-button">Random Color: Off</button>
+                    <button id="shading-button">Shading: Off</button>
+                    <button id="reset-button">Clear Canvas</button>    
+                </div>
+            </div>
+            
         </div>
-        <div id="grid-container">
+        
+        <div class="container">
+            <div id="grid-container"></div>
+        </div>        
+    </div>
 
-        </div>
+    <div class="footer">
     </div>
    
     

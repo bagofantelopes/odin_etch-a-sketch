@@ -1,3 +1,58 @@
+body {
+    background-color: black;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border: 20px groove white;
+    border-radius: 5%;
+    padding: 10px;
+}
+
+.sub-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    margin-left: 10px;
+    padding: 0;
+    gap: 10px;
+    width: auto;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: 1em;
+    gap: 1em;
+    
+}
+
+.controls {
+    border: 10px solid white;
+    border-radius: 10px;
+    background-color: lightgrey;
+    height: auto;
+
+}
 
 /* using root psuedo-class to apply CSS custom property values to entire document */
 :root {
@@ -6,11 +61,14 @@
 }
 
 #grid-container {
-    border: 15px groove black;
+    cursor: crosshair;
+    background-color: white;
+    border: 5px solid lightgrey;
+    border-radius: 5%;
     resize: both;
     display: grid;
-    width: 960px;
-    height: 960px;
+    width: 660px;
+    height: 660px;
     overflow: auto;
     /* CSS Variables and custom property values!*/
     grid-template-rows: repeat(var(--grid-rows), 1fr);
@@ -22,41 +80,22 @@
     height: 100%;
 }
 
-#main {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0 auto;
-}
-
-.buttons-container {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    margin: 1em;
-    gap: 1em;
-}
-
 button {
-    width: 100px;
+    width: 100%;
     height: 60px;
     border: 5px groove black;
 }
 
-#color-picker {
+#color-picker, #background-picker {
     width: 100%;
     height: 100%;
 }
 
 h1 {
     text-align: center;
+    color: aqua;
 }
 
- {
-    border: 5px solid black;
-}
-
-.header p {
+.footer {
     text-align: center;
 }
